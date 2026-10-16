@@ -5,8 +5,7 @@
     "main": "index.js",
     "scripts": {
         "launch:web": "cd apps/web && pnpm run dev",
-        "launch:api": " cd apps/api && pnpm run start",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "launch:api": "cd apps/api && pnpm run start"
     },
     "workspaces": [
         "apps/*"
@@ -22,5 +21,8 @@
         }
     },
     "packageManager": "pnpm@12.11.2",
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "@vite-pwa/nuxt": "^1.1.1"
+    }
 }

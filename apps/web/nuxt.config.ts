@@ -1,5 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true }
+    modules: ['@vite-pwa/nuxt'],
+    compatibilityDate: '2026-10-16',
+    devtools: { enabled: true },
+    devServer: {
+        host: '0.0.0.0',
+    },
 })
